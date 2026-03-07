@@ -1,0 +1,24 @@
+.btn {
+    float: right;
+    /* margin-right: 0.15rem; */
+}
+
+.list-group {
+    margin-top: 1rem;
+}
+
+.container {
+    margin-top: 1rem;
+}
+
+.item-list-base {
+    font-size: 1.5 rem;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.important {
+    color: red;
+}
