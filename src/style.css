@@ -22,3 +22,7 @@
 .important {
     color: red;
 }
+
+.item-add-form {
+    margin-top: 1rem;
+}

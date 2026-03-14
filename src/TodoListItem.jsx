@@ -8,11 +8,23 @@ class TodoListItem extends React.Component {
 
     onLabelClick = () => {
         console.log(`нажато: ${this.props.label}`)
-        this.setState({done: true})
+        this.setState(
+            ({done}) => {
+                return {
+                    done: !done
+                }
+            }
+        );
     }
 
     onMarkImportant = () => {
-        this.setState({important: true})
+        this.setState(
+            ({important}) => {
+                return {
+                    important: !important
+                }
+            }
+        )
     }
 
     render() {
@@ -32,7 +44,7 @@ class TodoListItem extends React.Component {
                     <button onClick={this.onMarkImportant} type="button" className="btn btn-outline-success">
                         <i className="fa-solid fa-exclamation"></i>
                     </button>
-                    <button type="button" className="btn btn-outline-danger">
+                    <button type="button" className="btn btn-outline-danger" onClick={this.props.onDeleted}>
                         <i className="fa-solid fa-trash-can"></i>
                     </button>
                 </div>
