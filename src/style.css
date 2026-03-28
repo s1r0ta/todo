@@ -7,6 +7,28 @@
     margin-top: 1rem;
 }
 
+.search-filter {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#search {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#filter {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+
+.label-text {
+    width: 40%;
+    word-wrap: break-word;
+}
+
 .container {
     margin-top: 1rem;
 }
@@ -26,3 +48,4 @@
 .item-add-form {
     margin-top: 1rem;
 }
+
